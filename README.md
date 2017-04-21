@@ -21,7 +21,7 @@ import * as facebookApi from 'facebook-api';
 ### init
 
 Takes facebook application id and facebook options as parameters.
-Returns a promise when facebook sdk is initialised.
+Returns a promise.
 
 ```js
 const FACEBOOK_APP_ID = 'you facebook application id';
@@ -39,12 +39,32 @@ facebook.init(FACEBOOK_APP_ID, FACEBOOK_OPTIONS).then(() => {
 
 ### login
 
-```js
+Takes facebook scope as a parameter.
+Returns a promise. When the promise is resolve you can access the facebook token (if you need something else, raise a pull request).
 
+```js
+export const FACEBOOK_SCOPE = 'public_profile,email';
+
+facebook.login(FACEBOOK_SCOPE)
+        .then(
+            (data) => {
+                console.log(data.token);
+            },
+            (error) => {
+                // show an error, maybe
+            }
+        );
 ```
 
 ### share
 
-```js
+Takes as a parameter an object containing the url, image, title and info you want to share.
 
+```js
+facebook.share({
+    url: 'http://host/pathname',
+    image: 'http://host/image.jpg',
+    title: 'Some title',
+    info: 'Some info',
+});
 ```
