@@ -1,12 +1,12 @@
 {
-  "name": "facebook-api-interface",
+  "name": "facebook-api",
   "version": "0.0.1",
   "author": "Ionut Cirja",
-  "url": "https://github.com/ionutcirja/facebook-api-interface",
+  "url": "https://github.com/ionutcirja/facebook-api",
   "license": "MIT",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/ionutcirja/facebook-api-interface"
+    "url" : "https://github.com/ionutcirja/facebook-api"
   },
   "scripts": {
     "build": "babel -d lib/ src/ --ignore *.spec.js",
