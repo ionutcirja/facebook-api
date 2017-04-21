@@ -23,6 +23,7 @@ import * as facebookApi from 'facebook-api';
 ### init
 
 Takes facebook application id and facebook options as parameters.
+
 Returns a promise.
 
 ```js
