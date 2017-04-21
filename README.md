@@ -2,7 +2,7 @@
 
 This is a simple utility to connect to facebook sdk.
 
-It is a work in progress and it contains just three methods for now (the most usual I'm using in my projects): init, login and share.
+It is work in progress and it contains just three methods, for now (the most usual I'm using in my projects): init, login and share.
 
 Any pull request is more than welcome.
 
@@ -44,7 +44,7 @@ facebook.init(FACEBOOK_APP_ID, FACEBOOK_OPTIONS).then(() => {
 
 Takes facebook scope as a parameter.
 
-Returns a promise. When the promise is resolve you can access the facebook token (if you need something else, raise a pull request).
+Returns a promise. When the promise is resolved, you can access the facebook token (if you need something else, raise a pull request).
 
 ```js
 export const FACEBOOK_SCOPE = 'public_profile,email';
