@@ -1,4 +1,4 @@
-export default (options) =>
+export default options =>
     window.FB.ui({
         method: 'feed',
         link: options.url,

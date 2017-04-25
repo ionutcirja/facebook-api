@@ -15,7 +15,7 @@ npm install facebook-api
 # Usage
 
 ```js
-import * as facebookApi from 'facebook-api';
+import facebook from 'facebook-api';
 ```
 
 ## Methods
