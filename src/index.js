@@ -3,7 +3,7 @@ import login from './login';
 import share from './share';
 
 export default {
-    init,
-    login,
-    share,
+  init,
+  login,
+  share,
 };

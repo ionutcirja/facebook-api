@@ -1,8 +1,12 @@
-export default options =>
-    window.FB.ui({
-        method: 'feed',
-        link: options.url,
-        picture: options.image,
-        name: options.title,
-        description: options.info,
-    });
+// @flow
+
+type Options = {
+  url: string,
+};
+
+export default (options: Options) => (
+  window.FB.ui({
+    method: 'feed',
+    link: options.url,
+  })
+);
