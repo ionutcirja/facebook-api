@@ -50,14 +50,14 @@ Returns a promise. When the promise is resolved, you can access the facebook tok
 export const FACEBOOK_SCOPE = 'public_profile,email';
 
 facebook.login(FACEBOOK_SCOPE)
-        .then(
-            (data) => {
-                console.log(data.token);
-            },
-            (error) => {
-                // show an error, maybe
-            }
-        );
+    .then(
+        (data) => {
+            console.log(data.token);
+        },
+        (error) => {
+            // show an error, maybe
+        }
+    );
 ```
 
 ### share
@@ -67,8 +67,5 @@ Takes as a parameter an object containing the url, image, title and info you wan
 ```js
 facebook.share({
     url: 'http://host/pathname',
-    image: 'http://host/image.jpg',
-    title: 'Some title',
-    info: 'Some info',
 });
 ```
