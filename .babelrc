@@ -1,10 +1,6 @@
 {
   "presets": [
-    "es2015"
-  ],
-  "env": {
-    "test": {
-      "plugins": ["istanbul"]
-    }
-  }
+    "@babel/preset-env",
+    "@babel/preset-flow"
+  ]
 }
