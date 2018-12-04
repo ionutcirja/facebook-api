@@ -9,12 +9,12 @@ describe('Facebook api interface: share', () => {
 
   it('should call fb ui method with the proper params', () => {
     const shareOptions = {
-      url: 'http://localhost',
+      link: 'http://localhost',
     };
-    share(shareOptions);
+    share('feed', shareOptions);
     expect(window.FB.ui).toHaveBeenCalledWith({
       method: 'feed',
-      link: shareOptions.url,
+      link: shareOptions.link,
     });
   });
 });
