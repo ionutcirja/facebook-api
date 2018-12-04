@@ -62,10 +62,9 @@ facebook.login(FACEBOOK_SCOPE)
 
 ### share
 
-Takes as a parameter an object containing the url, image, title and info you want to share.
+Takes fb ui method as a parameter (ex. share, feed etc).
+The second parameter is an object containing share options (ex. link, href etc)
 
 ```js
-facebook.share({
-    url: 'http://host/pathname',
-});
+facebook.share('feed', { link: 'http://host/pathname' });
 ```
